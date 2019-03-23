@@ -3,11 +3,11 @@
 This webapp is assignment number 2 for the Full Stack Developer (FSD) course by IIHT and IBM.
 
 ## Built With
-* Angular 7
-* Bootstrap 4
-* Bootstrap widgets (ng-bootstrap.github.io)
-* JSON Server fake api
-* YouTube Player API Reference for iframe Embeds
+* [Angular 7](https://angular.io)
+* [Bootstrap 4](https://getbootstrap.com)
+* [Bootstrap widgets](https://ng-bootstrap.github.io)
+* [JSON Server fake Rest API](https://github.com/typicode/json-server)
+* [YouTube Player API Reference for iframe Embeds](https://developers.google.com/youtube/iframe_api_reference)
 
 ## Author
 * **Charles Amper**
@@ -19,7 +19,7 @@ This webapp is assignment number 2 for the Full Stack Developer (FSD) course by 
 ### prerequisite
 
 Install 
-JSON FAKE API https://github.com/typicode/json-server
+JSON FAKE API 
 
 ```
 npm install -g json-server
