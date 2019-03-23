@@ -1,31 +1,16 @@
-<<<<<<< HEAD
-# IihtibmAngular
+# About
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.1.
+This webapp is assignment number 2 for the Full Stack Developer (FSD) course by IIHT and IBM.
 
-## Development server
+## Built With
+* Angular 7
+* Bootstrap 4
+* Bootstrap widgets (ng-bootstrap.github.io)
+* JSON Server fake api
+* YouTube Player API Reference for iframe Embeds
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Author
+* **Charles Amper**
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
-# iiht-ibm-training2
->>>>>>> d2ee2075559bf25333b09fb03fd8837330957622
+* **Date submitted** : March 25, 2019
+* **Training date** : December 2018 - ongoing
