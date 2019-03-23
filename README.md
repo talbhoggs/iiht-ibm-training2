@@ -46,3 +46,15 @@ Run
    json-server --watch database.json
  ```
    **Your done!**
+
+## Screenshots
+
+### Main page
+![alt text](image_main.png)
+
+### About page
+![alt text](image_about.png)
+
+### Add Video page
+![alt text](image_add.png)
+
