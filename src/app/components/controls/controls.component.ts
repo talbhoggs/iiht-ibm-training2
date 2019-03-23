@@ -20,6 +20,8 @@ export class ControlsComponent implements OnInit {
   likes: any = 0;
   unlikes: any = 0;
 
+  isPlaying = true;
+
 
   constructor(private playListService: PlaylistService) {
     this.playListService.recieverPlayListItem.subscribe(playItem => {
@@ -33,11 +35,13 @@ export class ControlsComponent implements OnInit {
   }
 
   controlPlay() {
+    this.isPlaying = true;
     this.playListService.updatePlayListItm(this.selItem);
     this.cntPlay.emit();
   }
 
   controlPause() {
+    this.isPlaying = false;
     this.cntPause.emit();
   }
 
@@ -54,6 +58,7 @@ export class ControlsComponent implements OnInit {
   }
 
   controlReload() {
+    this.isPlaying = true;
     this.cntReload.emit();
   }
 

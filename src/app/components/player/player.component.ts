@@ -34,6 +34,7 @@ export class PlayerComponent implements OnInit {
           width: '560',
           playerVars : {
             controls: 0,
+            rel: 0,
             showInfo: 0,
             color : 'white',
             fs : 0,

@@ -1,10 +1,24 @@
-<button id="play" (click)=controlPlay()><i class="fas fa-play-circle fa-lg"  ></i></button>
-<button id="pause" (click)=controlPause()><i class="fas fa-pause-circle fa-lg"></i></button> 
-<button id="increaseVolume" (click)=controlVolumePlus()><i class="fas fa-plus-square fa-lg"></i></button> 
-<button id="decreaseVolume" (click)=controlVolumeMinus()><i class="fas fa-minus-square fa-lg"></i></button>
-<button id="reload" (click)=controlReload()><i class="fas fa-redo-alt fa-lg"></i></button>
-<button id="mute" (click)=controlMute()><i class="fas fa-headphones-alt fa-lg"></i></button> 
-<div style="float:right">
-    <i placement="bottom" ngbTooltip="I like this" class="far fa-thumbs-up fa-lg" (click)="likeFunction()"></i>&nbsp;<span id="like">{{likes}}</span>&nbsp;
-    <i placement="bottom" ngbTooltip="I dislike this" class="fas fa-thumbs-down fa-lg" (click)="unLikeFunction()"></i>&nbsp;<span id="unlike">{{unlikes}}</span>
+<div *ngIf="selItem.title !=='' && selItem.url !==''">
+    <button [ngClass]="{'btn disabled': isPlaying}" id="play" (click)=controlPlay()><i class="fas fa-play-circle fa-lg"  ></i></button>
+    <button [ngClass]="{'btn disabled': !isPlaying}" id="pause" (click)=controlPause()><i class="fas fa-pause-circle fa-lg"></i></button>
+    <button id="increaseVolume" (click)=controlVolumePlus()><i class="fas fa-plus-square fa-lg"></i></button>
+    <button id="decreaseVolume" (click)=controlVolumeMinus()><i class="fas fa-minus-square fa-lg"></i></button>
+    <button id="reload" (click)=controlReload()><i class="fas fa-redo-alt fa-lg"></i></button>
+    <button id="mute" (click)=controlMute()><i class="fas fa-headphones-alt fa-lg"></i></button>
+    <div style="float:right">
+        <i placement="bottom" ngbTooltip="I like this" class="far fa-thumbs-up fa-lg" (click)="likeFunction()"></i>&nbsp;<span id="like">{{likes}}</span>&nbsp;
+        <i placement="bottom" ngbTooltip="I dislike this" class="fas fa-thumbs-down fa-lg" (click)="unLikeFunction()"></i>&nbsp;<span id="unlike">{{unlikes}}</span>
+    </div>
+</div>
+<div *ngIf="selItem.title ==='' && selItem.url ===''">
+        <button class="btn disabled"><i class="fas fa-play-circle fa-lg"  ></i></button>
+        <button class="btn disabled"><i class="fas fa-pause-circle fa-lg"></i></button>
+        <button class="btn disabled"><i class="fas fa-plus-square fa-lg"></i></button>
+        <button class="btn disabled"><i class="fas fa-minus-square fa-lg"></i></button>
+        <button class="btn disabled"><i class="fas fa-redo-alt fa-lg"></i></button>
+        <button class="btn disabled"><i class="fas fa-headphones-alt fa-lg"></i></button> 
+        <div style="float:right">
+            <i class="fas fa-thumbs-up fa-lg"></i>&nbsp;<span id="like">{{likes}}</span>&nbsp;
+            <i class="fas fa-thumbs-down fa-lg"></i>&nbsp;<span id="unlike">{{unlikes}}</span>
+        </div>
 </div>
