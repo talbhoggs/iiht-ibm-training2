@@ -1,0 +1,92 @@
+{
+  "playlist": [
+    {
+      "id": 1,
+      "title": "NORWAY - A Time-Lapse Adventure 4K",
+      "url": "https://www.youtube.com/watch?v=Scxs7L0vhZ4",
+      "status": "added",
+      "approved": 0,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 80
+    },
+    {
+      "id": 2,
+      "title": "AMPLITUDE | NEW ZEALAND 4K/UHD",
+      "url": "https://www.youtube.com/watch?v=Xa0Q0J5tOP0",
+      "status": "added",
+      "approved": 0,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 80
+    },
+    {
+      "id": 3,
+      "title": "Yosemite HD II",
+      "url": "https://www.youtube.com/watch?v=ZwzY1o_hB5Y",
+      "status": "added",
+      "approved": 0,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 80
+    },
+    {
+      "id": 4,
+      "title": "Angular 6 Tutorial",
+      "url": "https://www.youtube.com/watch?v=BoxuTR4ruUs",
+      "status": "added",
+      "approved": 0,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 80
+    },
+    {
+      "id": 5,
+      "title": "Understanding Javascript",
+      "url": "https://www.youtube.com/watch?v=Bv_5Zv5c-Ts",
+      "status": "added",
+      "approved": 0,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 80
+    },
+    {
+      "id": 6,
+      "title": "Sadhguru and Physics",
+      "url": "https://www.youtube.com/watch?v=pAluQXDTM9g",
+      "status": "added",
+      "approved": 0,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 80
+    },
+    {
+      "title": "SOLITUDE | NEW ZEALAND 4K/UHD",
+      "url": "https://www.youtube.com/watch?v=rcFKFv9wbS0",
+      "status": "added",
+      "approved": 0,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 0,
+      "id": 7
+    },
+    {
+      "title": "Game of Thrones | Season 8 | Official Trailer",
+      "url": "https://www.youtube.com/watch?v=rlR4PJn8b8I",
+      "status": "added",
+      "approved": 0,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 0,
+      "id": 8
+    }
+  ]
+}

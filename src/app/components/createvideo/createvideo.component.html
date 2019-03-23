@@ -1,0 +1,27 @@
+<div [hidden]="!this.isValid" class="alert alert-success" role="alert">
+    Youtube video added successfully!!
+</div>
+<form #playItemForm="ngForm" (ngSubmit)="onSubmit(playItemForm)" novalidate>
+
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input [(ngModel)]="playItem.title" id="title" name="title" class="form-control form-control-sm" type="text" required [ngClass]="{'is-invalid': playItemTitle.errors && playItemTitle.touched}" #playItemTitle="ngModel" />
+    <div class="invalid-feedback" [hidden]="!playItemTitle.errors?.required">
+      Title is required.
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="url">Youtube Url</label>
+    <input [(ngModel)]="playItem.url" id="url" name="url" class="form-control form-control-sm" type="text" [ngClass]="{'is-invalid': playItemUrl.errors && playItemUrl.touched}" #playItemUrl="ngModel" required pattern="(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})?$"/>
+    <div class="invalid-feedback" [hidden]="!playItemUrl.errors?.required">
+        Youtube url is required.
+    </div>
+    <div class="invalid-feedback" [hidden]="!playItemUrl.errors?.pattern">
+        Url must be in the following format https://www.youtube.com/watch?v=hashcode<br/>
+        example : https://www.youtube.com/watch?v=h_w_0zUs9ac
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary btn-sm" [disabled]="!playItemForm.form.valid">
+    <i class="fas fa-plus-circle"></i> Add Video
+  </button>&nbsp;<i class="far fa-question-circle" placement="right" ngbPopover="You need to enter a title and youtube link to submit and make this button active" placement="right" ngbTooltip="Click me if you need help!"></i>
+</form>

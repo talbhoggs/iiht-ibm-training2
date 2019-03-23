@@ -1,0 +1,84 @@
+<table class="table table-hover table-sm">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Url1</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of playList">
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.title}}</td>
+      <td>{{item.url}}</td>
+      <td>
+        <a placement="right" ngbTooltip="Click to Edit this item" (click)='edit(item, editModal)' data-toggle="tooltip" title="Edit!"><i data-toggle="tooltip" data-placement="top" title="Edit" class="fas fa-edit"></i></a>&nbsp;|&nbsp;
+        <a placement="right" ngbTooltip="Click to delete this item" (click)='delete(item, deleteModal)'><i title="Delete" class="fas fa-trash-alt"></i></a>&nbsp;|&nbsp;
+
+        <a *ngIf="item.approved === 0" class="badge badge-success" style="color:aliceblue">approve</a>
+        <a *ngIf="item.approved !== 0" class="badge badge-light" placement="bottom" ngbTooltip="Click to make this active" (click)='approve(item)'>approve</a>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <!-- modal delete-->
+  <ng-template #deleteModal let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-title">Delete Title</h4>
+      <button type="button" class="close" aria-label="Close button" aria-describedby="modal-title" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <p><strong>Are you sure you want to delete these records?</strong><br />
+        <span class="text-primary">Title : "{{selectedItemDelete.title}}"</span><br />
+        <span class="text-primary">Url : "{{selectedItemDelete.url}}"</span>
+      </p>
+      <p>All information associated to this link will be permanently deleted.
+      <span class="text-danger">This operation can not be undone.</span>
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss('cancel click')">Cancel</button>
+      <button type="button" class="btn btn-primary" (click)="modal.close('Ok click'); deletePlayListItem(selectedItemDelete);">Delete</button>
+    </div>
+  </ng-template>
+
+<!-- Modal edit-->
+  <ng-template #editModal let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-title">Edit Title</h4>
+        <button type="button" class="close" aria-label="Close button" aria-describedby="modal-title" (click)="modal.dismiss('Cross click')">
+          <span aria-hidden="false">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p class="text-left" style="color:green" [hidden]="!this.isValid">Your information has been successfully submitted.!</p>
+          <form #playItemForm="ngForm" novalidate>
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input [(ngModel)]="playItemEdit.title" id="title" name="title" class="form-control form-control-sm" type="text" required [ngClass]="{'is-invalid': playItemTitle.errors && playItemTitle.touched}" #playItemTitle="ngModel" />
+              <div class="invalid-feedback" [hidden]="!playItemTitle.errors?.required">
+                Title is required.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="url">Youtube Url</label>
+              <input [(ngModel)]="playItemEdit.url" id="url" name="url" class="form-control form-control-sm" type="text" [ngClass]="{'is-invalid': playItemUrl.errors && playItemUrl.touched}" #playItemUrl="ngModel" required pattern="(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})?$"/>
+              <div class="invalid-feedback" [hidden]="!playItemUrl.errors?.required">
+                  Youtube url is required.
+              </div>
+              <div class="invalid-feedback" [hidden]="!playItemUrl.errors?.pattern">
+                  Url must be in the following format https://www.youtube.com/watch?v=hashcode<br/>
+                  example : https://www.youtube.com/watch?v=h_w_0zUs9ac
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm" [disabled]="!playItemForm.form.valid" (click)="onSubmit(playItemForm, modal)">
+              <i class="fas fa-plus-circle"></i> Save Video
+            </button>
+          </form>
+      </div>
+  </ng-template>

@@ -1,0 +1,8 @@
+a.active {
+  cursor :none;
+}
+
+a.disabled {
+  cursor: pointer;
+  color: gray;
+}

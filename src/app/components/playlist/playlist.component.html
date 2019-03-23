@@ -1,0 +1,8 @@
+    
+<h3><i class="fas fa-list-alt"></i> My Playlist</h3>
+
+<ul class="list-group list-group-flush">
+    <li *ngFor="let item of playList" class="list-group-item list-group-item-action" (click)="setActive(this)">
+            <span class="d-inline-block" placement="right" ngbTooltip="Click to Play item"><a style="display:block;" (click)="selectedVideo(item)"><i class="fas fa-play-circle"></i> {{item.title}}</a></span>
+    </li>
+</ul>

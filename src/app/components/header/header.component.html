@@ -1,0 +1,19 @@
+<header>
+  <!-- Fixed navbar  -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#"><i class="fab fa-angular fa-lg"></i> &nbsp;IIHT-IBM Video Player</a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item" [routerLinkActive]="['active']">
+            <a placement="bottom" ngbTooltip="Know about this project" class="nav-link" [routerLink]="['/about']"><i class="fas fa-home"></i> About <span class="sr-only">(current)</span></a>
+        </li> 
+        <li class="nav-item" [routerLinkActive]="['active']">
+            <a placement="bottom" ngbTooltip="Player" class="nav-link" href="/main"><i class="fas fa-play-circle"></i> Player <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item" [routerLinkActive]="['active']">
+            <a placement="left" ngbTooltip="Add a youtube video" class="nav-link" [routerLink]="['/create']"><i class="fas fa-plus-circle"></i> Add Video <span class="sr-only">(current)</span></a>
+        </li>       
+      </ul>
+    </div>
+  </nav>
+</header>

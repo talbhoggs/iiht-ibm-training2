@@ -1,0 +1,59 @@
+{
+  "playlist": [
+    {
+      "title": "Investing In Stocks For Beginners",
+      "url": "https://www.youtube.com/watch?v=Sbp_t4guM8g",
+      "status": "added",
+      "approved": 0,
+      "likes": 12,
+      "unlikes": 5,
+      "currentStatus": "paused",
+      "exitplayprogress": 0,
+      "id": 10
+    },
+    {
+      "title": "Bill and Ted's Bogus Journey",
+      "url": "https://www.youtube.com/watch?v=iHIWmKB8GR4",
+      "status": "added",
+      "approved": 0,
+      "likes": 4,
+      "unlikes": 2,
+      "currentStatus": "paused",
+      "exitplayprogress": 0,
+      "id": 11
+    },
+    {
+      "title": "Back To The Future [1985] - The DeLorean",
+      "url": "https://www.youtube.com/watch?v=Psxktpxkc6o",
+      "status": "added",
+      "approved": 0,
+      "likes": 18,
+      "unlikes": 2,
+      "currentStatus": "paused",
+      "exitplayprogress": 0,
+      "id": 12
+    },
+    {
+      "title": "Game of Thrones Season 8 -  Official Trailer",
+      "url": "https://www.youtube.com/watch?v=rlR4PJn8b8I",
+      "status": "added",
+      "approved": 0,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 0,
+      "id": 14
+    },
+    {
+      "title": "AWAKENING | NEW ZEALAND 4K ULTRA HD",
+      "url": "https://www.youtube.com/watch?v=6D-A6CL3Pv8",
+      "status": "added",
+      "approved": 1,
+      "likes": 0,
+      "unlikes": 0,
+      "currentStatus": "paused",
+      "exitplayprogress": 0,
+      "id": 15
+    }
+  ]
+}
