@@ -15,7 +15,8 @@ This webapp is assignment number 2 for the Full Stack Developer (FSD) course by 
 * **Date submitted** : March 25, 2019
 * **Training date** : December 2018 - ongoing
 
-## prerequisite
+## Installing
+### prerequisite
 
 Install 
 JSON FAKE API https://github.com/typicode/json-server
@@ -23,7 +24,7 @@ JSON FAKE API https://github.com/typicode/json-server
 ```
 npm install -g json-server
 ```
-## Steps
+### Steps
 
 1. Run
 ```
