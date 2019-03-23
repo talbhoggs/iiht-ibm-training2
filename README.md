@@ -33,7 +33,7 @@ npm install -g json-server
 ```
   npm install
 ```
-3. Once installed. Open two terminals (bash/cmd) terminal in the root folder  
+3. Once installed. Open two terminals (bash or cmd) in the root folder  
 * For terminal 1:  
 Run
  ```
@@ -44,6 +44,4 @@ Run
  ```
    json-server --watch database.json
  ```
- 4. **Your done!**
-   
-   
+   **Your done!**
