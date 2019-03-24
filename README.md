@@ -45,7 +45,19 @@ Run
  ```
    json-server --watch database.json
  ```
-   **Your done!**
+
+ 4. Run this by opening your favorite web browser.
+
+UI:
+ ```
+   http://localhost:4200
+ ```
+Fake REST:
+ ```
+   http://localhost:3000/playlist
+ ```
+
+**Congratulations your done!**
 
 ## Screenshots
 
